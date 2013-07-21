@@ -25,6 +25,7 @@ if exists("g:molokai_original")
 else
     let s:molokai_original = 0
 endif
+    let s:molokai_original = 1
 
 
 hi Boolean         guifg=#AE81FF
@@ -47,7 +48,7 @@ hi Error           guifg=#960050 guibg=#1E0010
 hi ErrorMsg        guifg=#F92672 guibg=#232526 gui=bold
 hi Exception       guifg=#A6E22E               gui=bold
 hi Float           guifg=#AE81FF
-hi FoldColumn      guifg=#465457 guibg=#000000
+hi FoldColumn      guifg=#465457 guibg=#272822
 hi Folded          guifg=#465457 guibg=#000000
 hi Function        guifg=#A6E22E
 hi Identifier      guifg=#FD971F

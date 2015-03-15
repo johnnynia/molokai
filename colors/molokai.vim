@@ -197,7 +197,7 @@ if &t_Co > 255
    hi Type            ctermfg=81                cterm=none
    hi Underlined      ctermfg=244               cterm=underline
 
-   hi VertSplit       ctermfg=239 ctermbg=234   cterm=bold
+   hi VertSplit       ctermfg=0   ctermbg=0
    hi VisualNOS                   ctermbg=240
    hi Visual                      ctermbg=232
    hi WarningMsg      ctermfg=231 ctermbg=240   cterm=bold

@@ -210,4 +210,10 @@ if &t_Co > 255
    hi CursorColumn                ctermbg=234
    hi LineNr          ctermfg=241 ctermbg=234
    hi NonText         ctermfg=239 ctermbg=234
+
+   " Markdwon
+   hi markdownH1      ctermfg=118
+   hi markdownH2      ctermfg=166
+   hi markdownHeadingRule ctermfg=241
+   hi markdownListMarker ctermfg=15
 end

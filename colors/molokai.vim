@@ -138,10 +138,10 @@ if &t_Co > 255
    hi Define          ctermfg=81
    hi Delimiter       ctermfg=241
 
-   hi DiffAdd                     ctermbg=24
-   hi DiffChange      ctermfg=181 ctermbg=239
-   hi DiffDelete      ctermfg=162 ctermbg=53
-   hi DiffText                    ctermbg=102 cterm=bold
+   hi DiffAdd         ctermfg=0   ctermbg=118
+   hi DiffChange      ctermfg=0   ctermbg=81
+   hi DiffDelete      ctermfg=0   ctermbg=161
+   hi DiffText        ctermfg=0   ctermbg=15
 
    hi Directory       ctermfg=118               cterm=bold
    hi Error           ctermfg=219 ctermbg=89

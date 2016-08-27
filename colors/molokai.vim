@@ -212,8 +212,10 @@ if &t_Co > 255
    hi NonText         ctermfg=239 ctermbg=234
 
    " Markdwon
-   hi markdownH1      ctermfg=118
-   hi markdownH2      ctermfg=166
+   hi markdownH1      ctermfg=81
+   hi markdownH2      ctermfg=118
+   hi markdownH3      ctermfg=166
+   hi markdownH4      ctermfg=161
    hi markdownHeadingRule ctermfg=241
    hi markdownListMarker ctermfg=15
 end

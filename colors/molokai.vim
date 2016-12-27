@@ -126,13 +126,28 @@ end
 "
 " Support for 256-color terminal
 "
+" 135 pink
+" 144 yellowgrey
+" 161 red
+"  16 black
+" 253 light grey
+" 255 white
+"  81 light blue
+" 241 grey
+" 118 green
+" 219 light pink
+" 199 pink (error)
+" 208 orange
+" 193 strong green
+" 229 yellow
+"
 if &t_Co > 255
-   hi Boolean         ctermfg=135
+   hi Boolean         ctermfg=13
    hi Character       ctermfg=144
-   hi Number          ctermfg=135
-   hi String          ctermfg=144
+   hi Number          ctermfg=13
+   hi String          ctermfg=12
    hi Conditional     ctermfg=161               cterm=bold
-   hi Constant        ctermfg=135               cterm=bold
+   hi Constant        ctermfg=13
    hi Cursor          ctermfg=16  ctermbg=253
    hi Debug           ctermfg=225               cterm=bold
    hi Define          ctermfg=81
@@ -143,22 +158,22 @@ if &t_Co > 255
    hi DiffDelete      ctermfg=0   ctermbg=161
    hi DiffText        ctermfg=0   ctermbg=15
 
-   hi Directory       ctermfg=118               cterm=bold
+   hi Directory       ctermfg=10                cterm=bold
    hi Error           ctermfg=219 ctermbg=89
    hi ErrorMsg        ctermfg=199 ctermbg=16    cterm=bold
-   hi Exception       ctermfg=118               cterm=bold
+   hi Exception       ctermfg=10                cterm=bold
    hi Float           ctermfg=135
    hi FoldColumn      ctermfg=241  ctermbg=234
    hi Folded          ctermfg=241  ctermbg=16
-   hi Function        ctermfg=118
-   hi Identifier      ctermfg=208
+   hi Function        ctermfg=10
+   hi Identifier      ctermfg=11
    hi Ignore          ctermfg=244 ctermbg=232
    hi IncSearch       ctermfg=193 ctermbg=16
 
    hi Keyword         ctermfg=161               cterm=bold
    hi Label           ctermfg=229               cterm=none
    hi Macro           ctermfg=193
-   hi SpecialKey      ctermfg=81
+   hi SpecialKey      ctermfg=12
 
    hi MatchParen      ctermfg=16  ctermbg=208 cterm=bold
    hi ModeMsg         ctermfg=229
@@ -166,19 +181,19 @@ if &t_Co > 255
    hi Operator        ctermfg=161
 
    " complete menu
-   hi Pmenu           ctermfg=81  ctermbg=16
+   hi Pmenu           ctermfg=12  ctermbg=16
    hi PmenuSel                    ctermbg=244
    hi PmenuSbar                   ctermbg=232
-   hi PmenuThumb      ctermfg=81
+   hi PmenuThumb      ctermfg=12
 
-   hi PreCondit       ctermfg=118               cterm=bold
-   hi PreProc         ctermfg=118
-   hi Question        ctermfg=81
+   hi PreCondit       ctermfg=10                cterm=bold
+   hi PreProc         ctermfg=10
+   hi Question        ctermfg=12
    hi Repeat          ctermfg=161               cterm=bold
    hi Search          ctermfg=253 ctermbg=66
 
    " marks column
-   hi SignColumn      ctermfg=118 ctermbg=234
+   hi SignColumn      ctermfg=10  ctermbg=234
    hi SpecialChar     ctermfg=161               cterm=bold
    hi SpecialComment  ctermfg=245               cterm=bold
    hi Special         ctermfg=81  ctermbg=232
@@ -187,14 +202,14 @@ if &t_Co > 255
    hi Statement       ctermfg=161               cterm=bold
    hi StatusLine      ctermfg=238 ctermbg=253
    hi StatusLineNC    ctermfg=244 ctermbg=232
-   hi StorageClass    ctermfg=208
-   hi Structure       ctermfg=81
+   hi StorageClass    ctermfg=11
+   hi Structure       ctermfg=12
    hi Tag             ctermfg=161
-   hi Title           ctermfg=166
+   hi Title           ctermfg=11
    hi Todo            ctermfg=231 ctermbg=232   cterm=bold
 
-   hi Typedef         ctermfg=81
-   hi Type            ctermfg=81                cterm=none
+   hi Typedef         ctermfg=12
+   hi Type            ctermfg=12                cterm=none
    hi Underlined      ctermfg=244               cterm=underline
 
    hi VertSplit       ctermfg=0   ctermbg=0
@@ -204,18 +219,19 @@ if &t_Co > 255
    hi WildMenu        ctermfg=81  ctermbg=16
 
    hi Normal          ctermfg=252 ctermbg=234
+   hi Normal          ctermfg=252 ctermbg=8
    hi Comment         ctermfg=241
    hi CursorLine                  ctermbg=235   cterm=none
    hi CursorLineNr    ctermfg=253 ctermbg=235
    hi CursorColumn                ctermbg=235
-   hi LineNr          ctermfg=241 ctermbg=234
-   hi NonText         ctermfg=239 ctermbg=234
+   hi LineNr          ctermfg=241 ctermbg=8
+   hi NonText         ctermfg=239 ctermbg=8
 
    " Markdwon
-   hi htmlH1          ctermfg=81
-   hi htmlH2          ctermfg=118
-   hi htmlH3          ctermfg=166
-   hi htmlH4          ctermfg=161
+   hi htmlH1          ctermfg=12                cterm=bold
+   hi htmlH2          ctermfg=10                cterm=bold
+   hi htmlH3          ctermfg=11                cterm=bold
+   hi htmlH4          ctermfg=9                 cterm=bold
    hi markdownHeadingRule ctermfg=241
    hi markdownListMarker ctermfg=15
 end
